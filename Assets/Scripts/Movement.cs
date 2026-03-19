@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     
     [Header("Variables")]
     [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private float rotationSpeed = 10f;
     
     private void OnEnable()
     {
@@ -34,8 +35,21 @@ public class Movement : MonoBehaviour
     private void ProcessRotation()
     {
         var rotationInput = rotation.ReadValue<float>();
-        
-        
+
+        switch (rotationInput)
+        {
+            case < 0:
+                ApplyRotation(rotationSpeed);
+                break;
+            case > 0:
+                ApplyRotation(-rotationSpeed);
+                break;
+        }
+    }
+
+    private void ApplyRotation(float rotationThisFrame)
+    {
+        transform.Rotate(Vector3.forward * (rotationThisFrame * Time.fixedDeltaTime));
     }
 
     private void OnDisable()
