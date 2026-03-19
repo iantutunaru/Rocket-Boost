@@ -65,7 +65,7 @@ Rigidbody:
   m_GameObject: {fileID: 8466475801031918201}
   serializedVersion: 5
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -81,7 +81,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!114 &643556803747675897
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
     m_Flags: 0
   rb: {fileID: 6047257182202729565}
   moveSpeed: 1000
-  rotationSpeed: 20
+  rotationSpeed: 100
 --- !u!1001 &4601661284463990218
 PrefabInstance:
   m_ObjectHideFlags: 0
