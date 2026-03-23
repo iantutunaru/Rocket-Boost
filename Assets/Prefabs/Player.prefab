@@ -179,6 +179,7 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
   rb: {fileID: 6047257182202729565}
+  thrustSound: {fileID: 1025564391077225689}
   moveSpeed: 1000
   rotationSpeed: 100
 --- !u!82 &1025564391077225689
@@ -193,7 +194,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 4f723baaab7d90142b77de4b208f16ff, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

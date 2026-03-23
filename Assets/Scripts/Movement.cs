@@ -6,11 +6,13 @@ public class Movement : MonoBehaviour
     [Header("References")]
     [SerializeField] private InputAction thrust;
     [SerializeField] private InputAction rotation;
-    [SerializeField]private Rigidbody rb;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private AudioSource thrustSound;
     
     [Header("Variables")]
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float rotationSpeed = 10f;
+    
     
     private void OnEnable()
     {
@@ -29,6 +31,15 @@ public class Movement : MonoBehaviour
         if (thrust.IsPressed())
         {
             rb.AddRelativeForce(Vector3.up * (moveSpeed * Time.fixedDeltaTime));
+
+            if (!thrustSound.isPlaying)
+            {
+                thrustSound.Play();
+            }
+        }
+        else if (!thrust.IsPressed())
+        {
+            thrustSound.Stop();
         }
     }
 
