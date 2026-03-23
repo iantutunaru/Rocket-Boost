@@ -629,6 +629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 9198145591013386874, guid: 61fcf097314f16a43bcc359cc5e0f484, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -972,8 +976,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8466475801031918201, guid: ef09fa3d3d1c8e14884cc70ff0eb94d3, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 8912930841503546792}
   m_SourcePrefab: {fileID: 100100000, guid: ef09fa3d3d1c8e14884cc70ff0eb94d3, type: 3}
+--- !u!1 &8912930841503546787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8466475801031918201, guid: ef09fa3d3d1c8e14884cc70ff0eb94d3, type: 3}
+  m_PrefabInstance: {fileID: 8912930841503546786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8912930841503546792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8912930841503546787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe84b4834ace7b44b272d6510323050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
