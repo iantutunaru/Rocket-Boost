@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7565557733847639232}
   - component: {fileID: 6047257182202729565}
   - component: {fileID: 643556803747675897}
+  - component: {fileID: 3643605734654906370}
   - component: {fileID: 1025564391077225689}
   m_Layer: 0
   m_Name: Player
@@ -182,6 +183,20 @@ MonoBehaviour:
   thrustSound: {fileID: 1025564391077225689}
   moveSpeed: 1000
   rotationSpeed: 100
+--- !u!114 &3643605734654906370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8466475801031918201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe84b4834ace7b44b272d6510323050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
+  movement: {fileID: 643556803747675897}
+  delayUntilNextLevel: 2
 --- !u!82 &1025564391077225689
 AudioSource:
   m_ObjectHideFlags: 0
